@@ -16,10 +16,7 @@ const {
 } = require('../config');
 
 const localStrategy = new LocalStrategy((username, password, callback) => {
-
-  console.log('Hello World 2')
   let user;
-  console.log('hhhhhhh')
   User.findOne({
       username: username
     })
